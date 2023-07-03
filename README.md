@@ -12,6 +12,8 @@
   
   **Definição do trabalho:**
 <p align="left"> 
+
+  ```
 import java.util.Scanner;
 public class ListaProdutos {
 
@@ -114,6 +116,7 @@ System.out.println("Opção inválida!");
 } while (opcao != 0);
 }
 }
+```
 
 </p>
   
