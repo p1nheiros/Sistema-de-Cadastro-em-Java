@@ -375,7 +375,30 @@ public class TrabalhoJava {
             System.out.println("Opção inválida! Insira um número correspondente a um feedback válido.");
         }
 
-        matriz[linha - 1][7] = Integer.toString(feedback);
+        String descricaoFeedback;
+        switch (feedback) {
+            case 1:
+                descricaoFeedback = "Muito Bom";
+                break;
+            case 2:
+                descricaoFeedback = "Bom";
+                break;
+            case 3:
+                descricaoFeedback = "Normal";
+                break;
+            case 4:
+                descricaoFeedback = "Ruim";
+                break;
+            case 5:
+                descricaoFeedback = "Péssimo";
+                break;
+            default:
+                System.out.println("Opção inválida! O feedback será considerado como Normal.");
+                descricaoFeedback = "Normal";
+                break;
+        }
+
+        matriz[linha - 1][7] = descricaoFeedback;
 
         System.out.println("Feedback alterado para a pessoa selecionada.");
     }
